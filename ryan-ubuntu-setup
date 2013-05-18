@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# TODO hosts += https://smarthosts.googlecode.com/svn/trunk/hosts
+
 sudo apt-get install vim
 sudo apt-get install curl
 
