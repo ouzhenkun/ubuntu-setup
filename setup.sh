@@ -13,6 +13,8 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 wget https://dl.google.com/linux/direct/google-talkplugin_current_amd64.deb
 sudo dpkg -i google-*.deb
 sudo apt-get install -f
+# Flash 11.2
+sudo apt-get install flashplugin-installer
 
 # Goagent Local
 sudo apt-get install python-appindicator python-vte
@@ -29,6 +31,7 @@ sudo apt-get install virtualbox
 sudo apt-get install git
 git config --global user.name "ryan"
 git config --global user.email ryan.ouzhenkun@gmail.com
+git config --global push.default simple
 
 # Server
 sudo apt-get install openjdk-7-jdk tomcat7 maven2 ant mysql-server lighttpd
@@ -75,11 +78,6 @@ sudo npm install -g brunch karma
 sudo npm install jshint swank-js csslint coffee-script -g
 sudo npm install jasmine-node -g
 
-# Others
-sudo apt-get install sysv-rc-conf
-sudo apt-get install nautilus-open-terminal 
-sudo apt-get install lm-sensors
-
 # Unity
 sudo apt-get install unity-mail
 sudo apt-add-repository ppa:jfi/psensor-unstable
@@ -87,4 +85,9 @@ sudo apt-get update
 sudo apt-get install psensor
 sudo apt-get install android-tools-adb
 
+# Others
+sudo apt-get install sysv-rc-conf
+sudo apt-get install nautilus-open-terminal 
+sudo apt-get install lm-sensors
+sudo apt-get install ssh
 
