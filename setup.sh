@@ -78,15 +78,10 @@ sudo npm install -g brunch karma
 sudo npm install jshint swank-js csslint coffee-script -g
 sudo npm install jasmine-node -g
 
-# Unity
-sudo apt-get install unity-mail
-sudo apt-add-repository ppa:jfi/psensor-unstable
-sudo apt-get update
-sudo apt-get install psensor
-
 # Others
 sudo apt-get install sysv-rc-conf
 sudo apt-get install nautilus-open-terminal 
+sudo apt-get install unity-mail
 sudo apt-get install lm-sensors
 sudo apt-get install android-tools-adb
 sudo apt-get install ssh
