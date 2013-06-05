@@ -78,6 +78,11 @@ sudo npm install -g brunch karma
 sudo npm install jshint swank-js csslint coffee-script -g
 sudo npm install jasmine-node -g
 
+# Xmonad
+sudo apt-get install xmonad
+sudo apt-get install gnome-panel
+sudo apt-get install synapse
+
 # Others
 sudo apt-get install sysv-rc-conf
 sudo apt-get install nautilus-open-terminal 
