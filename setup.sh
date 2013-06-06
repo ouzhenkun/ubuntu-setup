@@ -17,6 +17,8 @@ sudo apt-get install -f
 sudo apt-get install flashplugin-installer
 
 # Goagent Local
+sudo apt-get install python3-dev
+sudo apt-get install python3-openssl
 sudo apt-get install python-appindicator python-vte
 sudo mv goagent /opt
 python /opt/goagent/local/goagent-gtk.py &
