@@ -1,0 +1,3 @@
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'wavded/vim-stylus'
+Bundle 'clones/vim-flash'

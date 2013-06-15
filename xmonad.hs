@@ -29,6 +29,8 @@ myManageHook = composeAll
     , (className =? "Gnome-contacts") --> doCenterFloat
     , (className =? "Empathy") --> doCenterFloat
     , (className =? "Xmessage") --> doCenterFloat
+    , (className =? "VirtualBox") --> doFloat
+    , (className =? "Win.py") --> doFloat
     ]
 
 myKeyBindings =
@@ -37,7 +39,6 @@ myKeyBindings =
     , ((myModMask, xK_o), spawn "gnome-terminal")
     , ((myModMask, xK_i), spawn (chrome ++ myChromeProfile))
     , ((myModMask, xK_u), spawn (chrome ++ otherChromeProfile))
-    -- open & focusIn gmail chrome app
     , ((myModMask .|. shiftMask, xK_i), spawn gmail)
     ]
 
@@ -45,5 +46,6 @@ myKeyBindings =
 myChromeProfile = " --profile-directory='Profile 1'"
 otherChromeProfile = " --profile-directory='Default'"
 chrome = "google-chrome"
-gmail = chrome ++ " --app='http://mail.google.com'" ++ myChromeProfile
+gmail = chrome ++ " 'http://mail.google.com'" ++ myChromeProfile
+{-gmail = chrome ++ " --app='http://mail.google.com'" ++ myChromeProfile-}
 

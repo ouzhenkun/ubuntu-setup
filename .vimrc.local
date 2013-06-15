@@ -1,0 +1,27 @@
+set autoread
+
+set noswapfile
+set backupdir=~/.vimbackup
+colorscheme ir_black
+
+set splitright
+set splitbelow
+set nospell
+
+let g:autoclose_on = 0
+
+" Config for Ctrl-p extension"
+set wildignore+=*eclipse*,*/tmp/*,*/node_modules/*,*.jar,*.zip,*.so,*.swp,*.class
+
+" Tab indent 2 for html
+au FileType html setlocal ts=2 sts=2 sw=2
+
+" Window resize
+nmap <C-up> <C-w>+
+nmap <C-down> <C-w>-
+nmap <C-left> <C-w><
+nmap <C-right> <C-w>>
+
+" Ctrl-P config
+let g:ctrlp_regexp = 0
+

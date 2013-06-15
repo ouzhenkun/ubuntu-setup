@@ -87,7 +87,6 @@ sudo apt-get install synapse
 
 # Others
 sudo apt-get install sysv-rc-conf
-sudo apt-get install nautilus-open-terminal 
 sudo apt-get install unity-mail
 sudo apt-get install lm-sensors
 sudo apt-get install android-tools-adb
