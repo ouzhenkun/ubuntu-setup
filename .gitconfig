@@ -1,0 +1,8 @@
+[user]
+	name = ryan
+	email = ryan.ouzhenkun@gmail.com
+[push]
+	default = simple
+
+[color]
+    ui = always

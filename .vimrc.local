@@ -2,19 +2,22 @@ set autoread
 
 set noswapfile
 set backupdir=~/.vimbackup
-colorscheme ir_black
 
 set splitright
 set splitbelow
 set nospell
 
-let g:autoclose_on = 0
-
-" Config for Ctrl-p extension"
-set wildignore+=*eclipse*,*/tmp/*,*/node_modules/*,*.jar,*.zip,*.so,*.swp,*.class
+colorscheme ir_black
 
 " Tab indent 2 for html
 au FileType html setlocal ts=2 sts=2 sw=2
+
+" AutoClose off
+let g:autoclose_on = 0
+
+" Ctrl-P config
+let g:ctrlp_regexp = 0
+set wildignore+=*eclipse*,*/tmp/*,*/node_modules/*,*.jar,*.zip,*.so,*.swp,*.class
 
 " Window resize
 nmap <C-up> <C-w>+
@@ -22,6 +25,7 @@ nmap <C-down> <C-w>-
 nmap <C-left> <C-w><
 nmap <C-right> <C-w>>
 
-" Ctrl-P config
-let g:ctrlp_regexp = 0
-
+" Allow Ctrl-S for saving
+nmap <C-S> :update<CR>
+vmap <C-S> <C-C>:update<CR>
+imap <C-S> <C-C>:update<CR>
