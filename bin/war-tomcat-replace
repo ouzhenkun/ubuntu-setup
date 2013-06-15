@@ -1,0 +1,13 @@
+#!/bin/bash
+
+sudo service tomcat7 stop
+
+echo "remove $WEBAPPS/schoolshape.war ..."
+sudo rm -fr $WEBAPPS/schoolshape.war
+echo "remove $WEBAPPS/schoolshape ..."
+sudo rm -fr $WEBAPPS/schoolshape
+
+echo "copy $SERVER_WAR/schoolshape.war to $WEBAPPS"
+sudo cp $SERVER_WAR/schoolshape.war $WEBAPPS/
+
+sudo service tomcat7 start

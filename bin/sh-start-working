@@ -1,0 +1,2 @@
+sudo ~/bin/sh-rabbitmq start
+sudo ~/bin/sh-lighttpd restart

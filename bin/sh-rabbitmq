@@ -1,0 +1,11 @@
+case $1 in
+    "start")
+        echo "start rabbitMQ ..." 
+        sudo rabbitmq-server start& ;;
+    "stop")
+        echo "stop rabbitMQ ..." 
+        sudo rabbitmqctl stop ;;
+    "status")
+        echo "rabbitMQ status:"
+        sudo rabbitmqctl status ;;
+esac

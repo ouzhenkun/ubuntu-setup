@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "start scala play ..."
+pushd $WORK/web
+
+sbt play start -DapplyEvolutions.default=true
+popd

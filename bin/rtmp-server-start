@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "run $WORK/rtmplite-s3-integration"
+pushd $WORK/rtmplite-s3-integration
+
+python main.py
+
+popd

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "karma start html5client test ..."
+pushd $WORK/html5client/test
+
+karma start
+
+popd

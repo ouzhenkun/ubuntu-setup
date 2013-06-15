@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "run $SERVER_PARENT/flash-server"
+pushd $SERVER_PARENT/flash-server
+
+mvn jetty:run
+
+popd

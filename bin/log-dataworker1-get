@@ -1,0 +1,1 @@
+scp aws-worker1:/var/log/schoolshape-worker/data-worker.log $1

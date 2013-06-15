@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "run $SERVER_PARENT/data-worker"
+pushd $SERVER_PARENT/data-worker
+
+mvn exec:java
+
+popd
