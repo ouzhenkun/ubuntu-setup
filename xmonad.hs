@@ -29,6 +29,7 @@ myManageHook = composeAll
     , (className =? "Gnome-contacts") --> doCenterFloat
     , (className =? "Empathy") --> doCenterFloat
     , (className =? "Xmessage") --> doCenterFloat
+    , (className =? "Nm-connection-editor") --> doCenterFloat
     , (className =? "VirtualBox") --> doFloat
     , (className =? "Win.py") --> doFloat
     ]
