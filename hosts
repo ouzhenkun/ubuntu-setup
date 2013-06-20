@@ -2,11 +2,11 @@
 127.0.1.1   ryan-ubuntu
 
 # WorkSpace
-127.0.0.1       lab.localhost.com custom.localhost.com 4all.localhost.com len.localhost.com
-127.0.0.1       en-localhost.com fr-localhost.com ge-localhost.com sp-localhost.com
+127.0.0.1       custom.schoolshape.com 4all.schoolshape.com len.schoolshape.com
+127.0.0.1       dev.schoolshape.com localhost.schoolshape.com db.schoolshape.com
+127.0.0.1       en-resources.org fr-resources.org ge-resources.org sp-resources.org
 127.0.0.1       www.localhost.com cdn.localhost.com stream.localhost.com
 127.0.0.1       media.localhost.com public.media.localhost.com private.media.localhost.com
-127.0.0.1       localhost.schoolshape.com test.schoolshape.com db.schoolshape.com
 127.0.0.1       rabbitmq data
 
 # Shanghai
