@@ -7,7 +7,8 @@ set splitright
 set splitbelow
 set nospell
 
-colorscheme ir_black
+colorscheme molokai
+"colorscheme ir_black
 
 " Tab indent 2 for html
 au FileType html setlocal ts=2 sts=2 sw=2
@@ -25,7 +26,26 @@ nmap <C-down> <C-w>-
 nmap <C-left> <C-w><
 nmap <C-right> <C-w>>
 
-" Allow Ctrl-S for saving
-nmap <C-S> :update<CR>
-vmap <C-S> <C-C>:update<CR>
-imap <C-S> <C-C>:update<CR>
+" Allow Ctrl-s for saving
+nmap <C-s> :update<CR>
+vmap <C-s> <C-c>:update<CR>
+imap <C-s> <C-c>:update<CR>
+
+" Switch to :shell
+nmap <C-d> :shell<CR>
+vmap <C-d> <C-c>:shell<CR>
+imap <C-d> <C-c>:shell<CR>
+
+" Tab Control, Alt 1-9 = :tabn 1-9
+nmap 1 1gt
+nmap 2 2gt
+nmap 3 3gt
+nmap 4 4gt
+nmap 5 5gt
+nmap 6 6gt
+nmap 7 7gt
+nmap 8 8gt
+nmap 9 9gt
+nmap 0 :tablast<CR>
+nmap <C-t> :tabnew<CR>
+nmap <C-w> :tabclose<CR>

@@ -24,6 +24,7 @@ main = do
 
 myManageHook = composeAll
     [ isFullscreen --> doFullFloat
+    , isDialog --> doCenterFloat
     , (className =? "Gnome-panel") --> doCenterFloat
     , (className =? "Gnome-power-statistics") --> doCenterFloat
     , (className =? "Gnome-contacts") --> doCenterFloat
@@ -32,6 +33,8 @@ myManageHook = composeAll
     , (className =? "Nm-connection-editor") --> doCenterFloat
     , (className =? "VirtualBox") --> doFloat
     , (className =? "Win.py") --> doFloat
+    -- Google Chat extension Windows
+    , (appName =? "crx_nckgahadagoaajjgafhacjanaoiihapd") --> doFloat
     ]
 
 myKeyBindings =
