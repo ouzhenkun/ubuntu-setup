@@ -3,5 +3,5 @@
 echo "start scala play ..."
 pushd $WORK/web
 
-sbt play start -DapplyEvolutions.default=true
+sbt play run -DapplyEvolutions.default=true
 popd
