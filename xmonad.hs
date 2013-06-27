@@ -23,10 +23,10 @@ main = do
     } `additionalKeys` myKeyBindings
 
 myManageHook = composeAll . concat $
-    [ [ isFullscreen  --> doFullFloat
-      , isDialog      --> doCenterFloat
-      , (className =? "VirtualBox")               --> doShift "5"
-      , (className =? "Nautilus")                 --> doShift "6"
+    [ [ isFullscreen                  --> doFullFloat
+      , isDialog                      --> doCenterFloat
+      , (className =? "VirtualBox")   --> doShift "5"
+      , (className =? "Nautilus")     --> doShift "6"
       ]
     , [ className =? c --> doFloat | c <- myFloatsC ]
     , [ appName   =? a --> doFloat | a <- myFloatsA ]
