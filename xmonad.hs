@@ -50,8 +50,8 @@ myKeyBindings =
     ]
 
 -- chrome multiple users
-myChromeProfile    = " --profile-directory                                    = 'Profile 1'"
-otherChromeProfile = " --profile-directory                                    = 'Default'"
+myChromeProfile    = " --profile-directory='Profile 1'"
+otherChromeProfile = " --profile-directory='Default'"
 chrome             = "google-chrome"
 gmail              = chrome ++ " 'http://mail.google.com'" ++ myChromeProfile
 
