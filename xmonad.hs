@@ -22,23 +22,23 @@ main = do
       , manageHook         = myManageHook <+> manageHook gnomeConfig
     } `additionalKeys` myKeyBindings
 
-myManageHook = composeAll
-    [ isFullscreen  --> doFullFloat
-    , isDialog      --> doCenterFloat
-    , (className =? "Gnome-panel")              --> doCenterFloat
-    , (className =? "Gnome-power-statistics")   --> doCenterFloat
-    , (className =? "Gnome-contacts")           --> doCenterFloat
-    , (className =? "Empathy")                  --> doCenterFloat
-    , (className =? "Xmessage")                 --> doCenterFloat
-    , (className =? "Nm-connection-editor")     --> doCenterFloat
-    , (className =? "VirtualBox")               --> doFloat
-    -- my python app
-    , (className =? "Win.py")                   --> doFloat
-    -- Google Hangouts extension Windows
-    , (appName   =? "crx_nckgahadagoaajjgafhacjanaoiihapd") --> doFloat
-    , (className =? "VirtualBox")               --> doShift "5"
-    , (className =? "Nautilus")                 --> doShift "6"
+myManageHook = composeAll . concat $
+    [ [ isFullscreen                  --> doFullFloat
+      , isDialog                      --> doCenterFloat
+      , (className =? "VirtualBox")   --> doShift "5"
+      , (className =? "Nautilus")     --> doShift "6"
+      ]
+    , [ className =? c --> doFloat | c <- myFloatsC ]
+    , [ appName   =? a --> doFloat | a <- myFloatsA ]
     ]
+    where
+        myFloatsC =
+         [ "Xmessage", "Empathy", "VirtualBox"
+         , "Gnone-panel", "Gnome-contacts", "Gnome-power-statistics"
+         , "Nm-connection-editor", "Win.py"
+         ]
+        -- Google Hangouts extension Windows
+        myFloatsA = [ "crx_nckgahadagoaajjgafhacjanaoiihapd" ]
 
 myKeyBindings =
     [ ((myModMask, xK_c), kill)
@@ -50,8 +50,8 @@ myKeyBindings =
     ]
 
 -- chrome multiple users
-myChromeProfile    = " --profile-directory                                    = 'Profile 1'"
-otherChromeProfile = " --profile-directory                                    = 'Default'"
+myChromeProfile    = " --profile-directory='Profile 1'"
+otherChromeProfile = " --profile-directory='Default'"
 chrome             = "google-chrome"
 gmail              = chrome ++ " 'http://mail.google.com'" ++ myChromeProfile
 
