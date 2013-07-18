@@ -33,7 +33,7 @@ myManageHook = composeAll . concat $
     ]
     where
         myFloatsC =
-         [ "Xmessage", "Empathy", "VirtualBox"
+         [ "Xmessage", "Empathy", "VirtualBox", "Rhythmbox"
          , "Gnone-panel", "Gnome-contacts", "Gnome-power-statistics"
          , "Nm-connection-editor", "Win.py"
          ]
