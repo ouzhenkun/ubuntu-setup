@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "deploy html5client ..."
+pushd $WORK/html5client
+
+brunch build
+cp target/*.* /var/www/document/
+
+popd
