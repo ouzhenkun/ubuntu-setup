@@ -12,4 +12,5 @@ ln -sf $SETUP/.gitconfig            ~/.
 ln -sf $SETUP/xmonad.hs             ~/.xmonad/.
 ln -sf $SETUP/bin/*                 ~/bin/.
 ln -sf $SETUP/hosts                 /etc/.
+ln -sf $SETUP/lighttpd.conf         /etc/lighttpd/.
 
