@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "grep web TODO ..."
+pushd $WORK/web
+
+grep 'TODO' -r --include='*.scala'
+
+popd
