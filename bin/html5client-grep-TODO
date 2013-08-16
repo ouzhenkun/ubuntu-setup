@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "grep html5client TODO ..."
+pushd $WORK/html5client
+
+grep 'TODO' -r --include='*.coffee'
+
+popd
