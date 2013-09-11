@@ -1,8 +1,8 @@
 [user]
-	name  = ryan
-	email = ryan.ouzhenkun@gmail.com
+    name  = ryan
+    email = ryan.ouzhenkun@gmail.com
 [push]
-	default = simple
+    default = simple
 [color]
     ui = always
 [color "status"]
