@@ -17,10 +17,6 @@ au FileType html setlocal ts=2 sts=2 sw=2
 " AutoClose off
 let g:autoclose_on = 0
 
-" Powerline
-"set laststatus=2
-"set t_Co=256
-
 " Remove inden guide highlight colors
 let g:indent_guides_auto_colors = 0
 
