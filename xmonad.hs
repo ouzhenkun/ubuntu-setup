@@ -37,8 +37,12 @@ myManageHook = composeAll . concat $
          , "Gnone-panel", "Gnome-contacts", "Gnome-power-statistics"
          , "Nm-connection-editor", "Win.py"
          ]
+        myFloatsA =
         -- Google Hangouts extension Windows
-        myFloatsA = [ "crx_nckgahadagoaajjgafhacjanaoiihapd" ]
+         [ "crx_nckgahadagoaajjgafhacjanaoiihapd"
+        -- Google Keep extension Windows
+         , "crx_anllmpockiaoeomoiciinmbomonmmbke"
+         ]
 
 myKeyBindings =
     [ ((myModMask, xK_c), kill)

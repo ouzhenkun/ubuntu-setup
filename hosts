@@ -3,7 +3,7 @@
 
 # WorkSpace
 127.0.0.1       custom.schoolshape.com 4all.schoolshape.com len.schoolshape.com
-127.0.0.1       play.schoolshape.com dev.schoolshape.com localhost.schoolshape.com db.schoolshape.com
+127.0.0.1       web.schoolshape.com server.schoolshape.com localhost.schoolshape.com db.schoolshape.com
 127.0.0.1       en-resources.org fr-resources.org ge-resources.org sp-resources.org
 127.0.0.1       www.localhost.com cdn.localhost.com stream.localhost.com
 127.0.0.1       media.localhost.com public.media.localhost.com private.media.localhost.com
