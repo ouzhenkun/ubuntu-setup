@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "brunch watch -s html5client -optimize ..."
+pushd $WORK/html5client
+
+brunch watch -s -P
+
+popd
