@@ -7,6 +7,7 @@ ln -sf $SETUP/.vimrc.local          ~/.
 ln -sf $SETUP/.vimrc.bundles.local  ~/.
 ln -sf $SETUP/.ctags                ~/.
 ln -sf $SETUP/.gitconfig            ~/.
+ln -sf $SETUP/.conkyrc              ~/.
 #ln -sf $SETUP/.proxy.ini           ~/.
 
 ln -sf $SETUP/xmonad.hs             ~/.xmonad/.

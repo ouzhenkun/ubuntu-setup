@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "start scala play - prod ..."
+pushd $WORK/web
+
+sbt play run -Dconfig.file=conf/prod.conf
+popd

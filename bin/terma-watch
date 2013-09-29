@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "watch terma ..."
+pushd $WORK/Terma
+
+grunt server
+
+popd
