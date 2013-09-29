@@ -1,7 +1,0 @@
-#!/bin/bash
-
-echo "start scala play - inMemoryDB ..."
-pushd $WORK/web
-
-sbt play run -Dconfig.file=conf/dev.conf
-popd

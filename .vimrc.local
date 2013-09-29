@@ -51,40 +51,40 @@ nmap <C-q> :q<CR>
 
 " TabLine Display, 1) file1.sh  2) file2.sh 1/2  3) file3.sh +  4) file4.sh
 if exists("+showtabline")
-     function MyTabLine()
-         let s = ''
-         let t = tabpagenr()
-         let i = 1
-         while i <= tabpagenr('$')
-             let wincur = tabpagewinnr(i)
-             let winlen = tabpagewinnr(i, '$')
-             let buflist = tabpagebuflist(i)
-             let bufnr = buflist[wincur - 1]
-             let fname = fnamemodify(bufname(bufnr), ':p:t')
-             if fname == ''
-                 let fname = '[未命名]'
-             endif
-             " mouse click
-             let s .= '%' . i . 'T'
-             " tabline color
-             let s .= (i == t ? '%#TabLineSel#' : '%#TabLine#')
-             " tabline label
-             let s .= ' ' . i . ') ' . fname . ' '
-             if getbufvar(bufnr, "&modified")
-                 let s .= '+ '
-             endif
-             if getbufvar(bufnr, "&modifiable") == 0
-                 let s .= '- '
-             endif
-             if winlen > 1
-                 let s .= wincur . '/' . winlen . ' '
-             endif
-             let i = i + 1
-         endwhile
-         let s .= '%T%#TabLineFill#%='
-         let s .= (tabpagenr('$') > 1 ? '%999XX' : 'X')
-         return s
-     endfunction
-     "set stal=2
-     set tabline=%!MyTabLine()
+    function MyTabLine()
+        let s = ''
+        let t = tabpagenr()
+        let i = 1
+        while i <= tabpagenr('$')
+            let wincur = tabpagewinnr(i)
+            let winlen = tabpagewinnr(i, '$')
+            let buflist = tabpagebuflist(i)
+            let bufnr = buflist[wincur - 1]
+            let fname = fnamemodify(bufname(bufnr), ':p:t')
+            if fname == ''
+                let fname = '[未命名]'
+            endif
+            " mouse click
+            let s .= '%' . i . 'T'
+            " tabline color
+            let s .= (i == t ? '%#TabLineSel#' : '%#TabLine#')
+            " tabline label
+            let s .= ' ' . i . ') ' . fname . ' '
+            if getbufvar(bufnr, "&modified")
+                let s .= '+ '
+            endif
+            if getbufvar(bufnr, "&modifiable") == 0
+                let s .= '- '
+            endif
+            if winlen > 1
+                let s .= wincur . '/' . winlen . ' '
+            endif
+            let i = i + 1
+        endwhile
+        let s .= '%T%#TabLineFill#%='
+        let s .= (tabpagenr('$') > 1 ? '%999XX' : 'X')
+        return s
+    endfunction
+    "set stal=2
+    set tabline=%!MyTabLine()
 endif
