@@ -3,7 +3,7 @@
 
 # WorkSpace
 127.0.0.1       custom.schoolshape.com 4all.schoolshape.com len.schoolshape.com
-127.0.0.1       web.schoolshape.com server.schoolshape.com localhost.schoolshape.com db.schoolshape.com cdn.localhost.schoolshape.com
+127.0.0.1       web.schoolshape.com server.schoolshape.com localhost.schoolshape.com db.schoolshape.com mockcdn.schoolshape.com
 127.0.0.1       en-resources.org fr-resources.org ge-resources.org sp-resources.org
 127.0.0.1       www.localhost.com stream.localhost.com cdn.localhost.com
 127.0.0.1       media.localhost.com public.media.localhost.com private.media.localhost.com
@@ -19,8 +19,6 @@
 192.168.1.8     schoolshape lab cdn cdn.com ilenguas.schoolshape.com
 192.168.1.8     public.media.shanghai.com private.media.shanghai.com s3.shanghai.com
 192.168.1.106   stream.shanghai.com
-
-23.20.242.96    lab.schoolshape.com www.schoolshape.com
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
