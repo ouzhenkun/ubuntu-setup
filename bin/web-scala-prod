@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "start scala play - prod ..."
+echo "start scala play - prod.conf ..."
 pushd $WORK/web
 
 sbt play run -Dconfig.file=conf/prod.conf

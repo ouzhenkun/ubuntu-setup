@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "start scala play - local.conf ..."
+pushd $WORK/web
+
+sbt play run -Dconfig.file=conf/local.conf
+popd
