@@ -1,0 +1,12 @@
+#!/bin/bash
+
+DAY=2014-$1
+URL=s3://schoolshape-archive/log/$DAY*
+
+echo "s3cmd get '$URL' . -f"
+s3cmd get "$URL" . -f
+
+echo "zcat $DAY*.gz | gzip > log-$DAY.gz"
+zcat $DAY*.gz | gzip > log-$DAY.gz
+
+rm $DAY*.gz
