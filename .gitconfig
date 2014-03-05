@@ -31,3 +31,6 @@
     ls  = log --oneline --graph --decorate
     ll  = log --graph --decorate
     w   = show
+[http]
+    proxy = http://127.0.0.1:8087
+    sslVerify = false
