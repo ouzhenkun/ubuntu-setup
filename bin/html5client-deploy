@@ -3,7 +3,7 @@
 echo "deploy html5client ..."
 pushd $WORK/html5client
 
-brunch build -P
+brunch build $1
 cp target/*.* /var/www/document/
 
 popd
